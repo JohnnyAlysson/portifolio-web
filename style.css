@@ -54,7 +54,8 @@ body{
 .home{
     height:100vh;
     /* background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW0zMnA2OWg5azgwMGRwbmR4eDJ4MmhreHM4bWwzMmN6NGZmYmRiZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NKEt9elQ5cR68/giphy.gif"); */
-    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJna2Q1Y3ZpZ3BkZ3BnYWd5dGpyb3VxYzJxZzk5YW4zamNjdzIydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5e25aUTZPcI94uMZgv/giphy.gif");
+    /* background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDJna2Q1Y3ZpZ3BkZ3BnYWd5dGpyb3VxYzJxZzk5YW4zamNjdzIydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5e25aUTZPcI94uMZgv/giphy.gif"); */
+    background-image: url("https://64.media.tumblr.com/9d8985b8b2a520ad98933b360c45ede6/dbde3b1346a79b62-4e/s1280x1920/bced6f3134ab1efbc5b5456b8c2909c9bb33edae.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,12 +80,159 @@ body{
     border-color: #7B6AEB;
 }
 
+.home_nome{
+    font-family: "Press Start 2p";
+    font-size: 40px;
+    padding: 20px;
+}
+.home_area{
+    font-family: "Press Start 2p";
+    font-size: 20px;
+    color: #A66AEB;
+}
+
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    margin: 90px auto;
+    gap: 30px;
+    min-height: 100vh;
+    border-top: solid #1bdad2;
+    border-bottom: solid #1bdad2;
+    border-width: 10px;
+
+
+}
+
+.sobre_infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sobre_titulo{
+    font-size: 80px;
+    font-family: "Press Start 2p";
+    position: relative;
+}
+.sobre_titulo::before{
+    content: "";
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2619/2619057.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    position:absolute;
+    top: -70px;
+    left: -70px;
+    z-index: -1;
+}
+.sobre_texto{
+    font-size: 24px;
+    font-family: "Roboto";
+    
+
+}
+
+.sobre_imagem{
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #1bdad2;
+    max-width: 400px;
+}
+
+.cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    margin: 90px auto;
+    gap: 30px;
+    min-height: 100vh;
+    border-bottom: solid #1bdad2;
+    border-width: 10px;
+
+}
+.cursos_titulo{
+    font-size: 100px;
+    font-family: "Press Start 2P";
+    word-wrap: break-word;
+    max-width: 300px;
+}
+.cursos_lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px
+}
+.curso{
+    background-color: #000000cc;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+    box-shadow: 5px 5px 20px rgba(142, 223, 243, 0.8);
+}
+
+
+
+.curso_titulo{
+    color: #6A81EB;
+    font-size: 24px;
+    position: relative;
+}
+.curso_titulo::before{
+    content:"" ;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.432) 0%, rgba(106, 130, 235, 0.452) 43%, rgba(123,106,235,1) 100%);;
+    border-radius: 5px;
+    width: 20px;
+    height: 30px;
+    position:absolute;
+    top: 0px;
+    left: -30px;
+    ;
+    
+
+}
+.curso_subtitulo{
+    color: #7B6AEB;
+    font-size: 15px;
+}
+
+.curso_texto{
+    color: azure;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.curso_duracao{
+    color: #1bdad2;
+    
+}
+
+
+
+
 @keyframes rotate {
 	100% {
 		transform: rotate(1turn);
 	}
 }
-.rainbow {
+
+.botao_interativo {
 	position: relative;
 	z-index: 0;
 	width: 50px;
@@ -92,6 +240,13 @@ body{
 	border-radius: 50%;
 	overflow: hidden;
 	padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    
     
 	
 	&::before {
@@ -124,18 +279,6 @@ body{
 	}
 }
 
-  
-.home_nome{
-    font-family: "Press Start 2p";
-    font-size: 40px;
-    padding: 20px;
-}
-.home_area{
-    font-family: "Press Start 2p";
-    font-size: 20px;
-    color: #A66AEB;
-}
-
 /* 
 #6A81EB
 #A66AEB
@@ -143,4 +286,7 @@ body{
 #6AAAEB
 #CF6AEB
 #1D0F21
+#04E9CE
+#27d1d4
+#1bdad2
  */
