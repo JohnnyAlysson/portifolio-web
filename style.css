@@ -13,7 +13,7 @@ body{
 
 }
 .menu_logo{
-    max-width: 100px;
+    max-width: 60px;
     cursor: pointer;
     transition: 0.5s  ease-in-out;  
 } 
@@ -77,7 +77,7 @@ body{
     border-radius: 50%;
     border-width: 10px;
     border-style: double;
-    border-color: #7B6AEB;
+    border-color: azure;
 }
 
 .home_nome{
@@ -222,7 +222,37 @@ body{
     color: #1bdad2;
     
 }
+.projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: 0 auto;
+    margin: 90px auto;
+    gap: 30px;
+    min-height: 100vh;
+    border-bottom: solid #1bdad2;
+    border-width: 10px;
+}
+.projeto_lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projeto_titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
+.projeto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 
