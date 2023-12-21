@@ -228,7 +228,6 @@ body{
     justify-content: center;
     align-items: center;
     max-width: 80vw;
-    margin: 0 auto;
     margin: 90px auto;
     gap: 30px;
     min-height: 100vh;
@@ -240,6 +239,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
+    
+    
 }
 .projeto_titulo{
     display: flex;
@@ -252,6 +254,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+
+}
+.projeto_img{
+    max-width: 400px;
+    padding: 0px 100px;
 
 }
 
