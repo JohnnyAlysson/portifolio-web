@@ -186,7 +186,7 @@ body{
     gap: 20px;
     font-weight: bold;
     font-family: "Roboto";
-    box-shadow: 5px 5px 20px rgba(142, 223, 243, 0.8);
+    box-shadow: 5px 5px 20px #a66aebce;
 }
 
 
@@ -229,20 +229,55 @@ body{
     align-items: center;
     max-width: 80vw;
     margin: 90px auto;
-    gap: 30px;
+    gap: 100px;
     min-height: 100vh;
-    border-bottom: solid #1bdad2;
+    border-bottom: solid #1bdad0;
     border-width: 10px;
 }
 .projeto_lista{
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 50px;
     
     
 }
+.projetos_titulo{
+    font-size: 80px;
+    font-family: "Press Start 2p";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.projetos_titulo::before{
+content: "";
+background-image: url("https://cdn-icons-png.flaticon.com/512/2619/2619057.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 120px;
+height: 120px;
+position:absolute;
+top: -70px;
+left: -70px;
+z-index: -1;
+}
+.projeto{
+    background-color: #020205;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 5px 5px 20px #a66aebce;
+    gap: 150px;
+}
+
 .projeto_titulo{
     display: flex;
     justify-content: center;
@@ -250,17 +285,12 @@ body{
     gap: 20px;
 }
 
-.projeto{
-    display: flex;
+.projeto_img{
     justify-content: center;
     align-items: center;
-    gap: 50px;
-
-}
-.projeto_img{
     max-width: 400px;
-    padding: 0px 100px;
-
+    border-radius: 50px;
+    margin:  0px auto 0px 50px;
 }
 
 
