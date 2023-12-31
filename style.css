@@ -278,11 +278,14 @@ z-index: -1;
     gap: 150px;
 }
 
-.projeto_titulo{
+.projeto_conteudo{
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
+}
+.projeto_titulo{
+    display: flex;
 }
 
 .projeto_img{
@@ -291,6 +294,16 @@ z-index: -1;
     max-width: 400px;
     border-radius: 50px;
     margin:  0px auto 0px 50px;
+}
+.projeto_subtitulo{
+
+}
+.projeto_texto{
+
+}
+
+.projeto_link{
+
 }
 
 
