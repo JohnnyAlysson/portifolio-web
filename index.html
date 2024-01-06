@@ -12,7 +12,7 @@
     <link rel="website icon" type="png" href="./assets/logo_site.png">                                                  <!--Adicionei uma logo a pagina do site -->
 </head>
 <body>
-    <header class="menu">
+    <header id="menu" class="menu">
         <img class="menu_logo" src="./assets/menu.png.png" alt="logo programação">
         <ul class = "menu_lista">                                                                                       <!--<ul>/ul> cria uma lista--->
             <li>                                                                                                        <!--<li></li> é cada elemento da lista estando dentro de ul--->
@@ -29,10 +29,10 @@
             </li>
             
         </ul>
-        <a class="menu_curriculo" href="">Currículo</a>
+        <a class="menu_curriculo" href="https://drive.google.com/file/d/1toGUbjlF_QWaxcWWgkRhPQkviSdpOOWH/view?usp=drive_link" target="_blank">Currículo</a>
     </header>
 
-    <main id ="#home" class="home">
+    <main id ="home" class="home">
         <div class="home_infos">                                                                                        <!--<div></div> é um elemento de divisão https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/div -->
             <img class="home_img"src="https://th.bing.com/th/id/OIG.haiSSczXDFMlq2CSVJBK?pid=ImgGn" alt="Imagem de programador 30 anos,com oculos, com barba e cabelos longos preso com um coque">
             <h1 class="home_nome">Johnny Alysson</h1>
@@ -40,7 +40,7 @@
 
         </div>
     </main>
-    <section class = "sobre" id="#sobre">
+    <section class = "sobre" id="sobre">
         <div class="sobre_infos">
             <h2 class="sobre_titulo">Sobre</h2>
             <p class="sobre_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cumque assumenda optio cum expedita fuga modi magni, recusandae necessitatibus. Vero impedit non iste dolor cumque velit explicabo error quisquam ipsa.</p>
@@ -50,46 +50,57 @@
         <img class="sobre_imagem" src="https://i.pinimg.com/736x/da/40/4b/da404bf7bd4398c9f256c65507d3c860.jpg" alt="laptop e linguagens de programação">
 
     </section>
-    <section id="#cursos" class="cursos" >
+    <section id="cursos" class="cursos" >
         <h2 class="cursos_titulo">Cursos</h2>
         <div class="cursos_lista">
             <div class="curso">
                 <h3 class="curso_titulo">Infinity School</h3>
                 <h4 class="curso_subtitulo">Programação Full Stack</h4>
-                <p class="curso_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem asperiores similique atque pariatur rem porro inventore rerum saepe perspiciatis, eos nemo dolorem eum labore et quaerat quas odit, quae reiciendis?</p>
+                <p class="curso_texto">O curso abrange diversas stacks essenciais para formação de desenvolvedores Full Stack, incluindo Python, Javascript, HTML, CSS, Banco de Dados MySQL, React, entre outras. Desde o front end até o back end, no curso explora-se o desenvolvimento de aplicativos, websites, sistemas e até mesmo conceitos avançados, como inteligência artificial. Além disso, há conhecimentos sobre sistemas de gestão ágil para uma abordagem eficiente no desenvolvimento.</p>
                 <p class="curso_duracao"> 1 ano</p>
             </div>
             <div class="curso">
                 <h3 class="curso_titulo">Gestão Empresarial</h3>
                 <h4 class="curso_subtitulo">Faveni</h4>
-                <p class="curso_texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum repellat repellendus, consectetur adipisci dignissimos cum aut saepe corrupti voluptates accusamus ratione quisquam voluptatem, odit in velit fugiat necessitatibus quidem quos.</p>
+                <p class="curso_texto">Curso de pós graduação em Gestão empresarial estratégica. O curso trata de técnicas de gestão, avaliação e, o conjunto de ferramentas respectivas concebidas para ajudar empresas na tomada de decisões estratégicas de alto nível.</p>
                 <p class="curso_duracao">2 anos</p>   
             </div>
         </div>
     </section>
-    <section id="#projetos" class="projetos">
+    <section id="projetos" class="projetos">
         <div class="projeto_lista">
             <h2 class="projetos_titulo">Projetos</h2>
             <div class="projeto">
-                <img class="projeto_img" src="https://assets-global.website-files.com/6399c61683700ed8ab159d36/639fb85066f416b5bf185fcf_Ciclo-de-vida-de-um-projeto.png" alt="">
+                <img class="projeto_img" src="/assets/emailgif.gif" alt="animação email">
                 <div class="projeto_conteudo">
                     <h3 class="projeto_titulo">Criação e envio de relátorio por email</h3>
                     <h4 class="projeto_subtitulo">Python</h4>
                     <p class="projeto_texto">O projeto consiste em um programa que analisa um banco de dados, calcula informações-chave e envia um e-mail com o relatório completo.</p>
-                    <a class="projeto_link" href="https://github.com/JohnnyAlysson/projeto_relatorio_pub">Github</a>
+                    <a class="projeto_link" href="https://github.com/JohnnyAlysson/projeto_relatorio_pub" target="_blank">Github</a>
                 </div>
             </div>
             <div class="projeto">
-                <img class="projeto_img" src="https://assets-global.website-files.com/6399c61683700ed8ab159d36/639fb85066f416b5bf185fcf_Ciclo-de-vida-de-um-projeto.png" alt="">
-                <div>
+                <img class="projeto_img" src="/assets/screenshot_game.png" alt="Interface gráfica Pedra, papel e tesoura">
+                <div class="projeto_conteudo">
                     <h3 class="projeto_titulo">Jo ken po game</h3>
-                    <h4 class="projeto_subtitulo">Local?</h4>
-                    <p class="projeto_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi perspiciatis, totam aperiam necessitatibus doloremque natus delectus perferendis culpa consequatur? Incidunt eos hic earum temporibus commodi ea esse adipisci dolorem impedit?</p>
+                    <h4 class="projeto_subtitulo">Python e Tkinter</h4>
+                    <p class="projeto_texto">A aplicação consiste em um jogo simples de pedra, papel e tesoura, onde o usuário escolhe uma opção e recebe a mensagem informando que venceu, perdeu ou empatou. Foi utilizado Python e as bibliotecas Tkinter e Pillow.</p>
+                    <a class="projeto_link" href="https://github.com/JohnnyAlysson/jo-ken-po_game" target="_blank">Github</a>
+                </div>
+            </div>
+            <div class="projeto">
+                <img class="projeto_img" src="/assets/portifolio_site.png" alt="Imagem do site">
+                <div class="projeto_conteudo">
+                    <h3 class="projeto_titulo">Website</h3>
+                    <h4 class="projeto_subtitulo">Html e Css</h4>
+                    <p class="projeto_texto">Meu primeiro projeto de site Portfólio criado em um workshop de 4 horas usando Html e Css </p>
+                    <a class="projeto_link" href="https://github.com/JohnnyAlysson/portifolio-web" target="_blank">Github</a>
+                    <a class="projeto_link" href="https://johnnyalysson.github.io/portifolio-web/" target="_blank">Website</a>
                 </div>
             </div>
     </section>
         </div>
-    <a class="botao_interativo" href=""></a>
+    <a class="botao_interativo" href="#menu"></a>
 </body>
 <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=A66AEB&height=120&section=footer"/>
 </html>
